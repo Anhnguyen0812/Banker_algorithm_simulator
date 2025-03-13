@@ -4,7 +4,7 @@ from tkinter import ttk, filedialog, messagebox
 # Import core functions from test.py
 from banker_algorithm import read_input, calculate_need, is_safe, request_resources
 
-FONT_SIZE = 15
+FONT_SIZE = 13
 
 class BankerAlgorithmGUI:
     def __init__(self, root):
@@ -101,11 +101,11 @@ class BankerAlgorithmGUI:
         ttk.Label(request_frame, text="Select Process:", font=("Arial",FONT_SIZE)).grid(row=0, column=0, sticky=tk.W, pady=5)
         self.process_var = tk.StringVar()
         self.process_combo = ttk.Combobox(request_frame, textvariable=self.process_var, state="disabled", font=("Arial",FONT_SIZE))
-        self.process_combo.grid(row=0, column=1, sticky=tk.W, pady=5)
+        self.process_combo.grid(row=0, column=0, sticky=tk.W, pady=5)
         
         # Resource request inputs
         self.resource_frame = ttk.Frame(request_frame)
-        self.resource_frame.grid(row=1, column=0, columnspan=2, sticky=tk.W, pady=10)
+        self.resource_frame.grid(row=1, column=0, columnspan=1, sticky=tk.W, pady=10)
         
         # Request button
         self.request_button = ttk.Button(request_frame, text="Make Request", 
@@ -545,10 +545,7 @@ class BankerAlgorithmGUI:
                 
                 # Update execution steps
                 self.execution_steps = steps
-                
                 self.result_var.set(f"Request granted! System is safe.\nSafe sequence: {' → '.join('P'+str(i) for i in result)}")
-                self.safety_var.set(f"✓ SYSTEM IS SAFE - Safe Sequence: {' → '.join('P'+str(i) for i in result)}")
-                self.safety_label.configure(foreground="green")
                 
                 # Update displays
                 self.update_matrices_display()

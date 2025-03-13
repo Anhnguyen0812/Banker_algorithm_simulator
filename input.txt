@@ -1,0 +1,18 @@
+# Format: Lines starting with # are comments
+# First line: <number_of_processes> <number_of_resources>
+# Second line: <available_resources>
+# Next lines: <maximum_demand> for each process
+# Final lines: <allocation> for each process
+
+5 3
+3 3 2
+7 5 3
+3 2 2
+9 0 2
+2 2 2
+4 3 3
+0 1 0
+2 0 0
+3 0 2
+2 1 1
+0 0 2

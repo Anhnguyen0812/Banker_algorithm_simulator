@@ -15,7 +15,8 @@
 ## 🔹 System State & Execution Steps
 
 ### Trạng thái hệ thống và các bước thực thi:
-![System State](https://github.com/user-attachments/assets/9e5230fb-3aa9-469e-860f-743a059938ba)
+![System State](https://github.com/user-attachments/assets/fea05826-3753-4f31-978a-14529d33b9c0)
+)
 
 ---
 

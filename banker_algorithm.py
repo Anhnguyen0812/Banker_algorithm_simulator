@@ -23,7 +23,7 @@ def read_input(filename):
     return n_processes, n_resources, available, max_demand, allocation
 
 def calculate_need(max_demand, allocation):
-    """Calculate the Need matrix (Max - Allocation)"""
+    """Calculate the Need mafinishtrix (Max - Allocation)"""
     return [
         [max_demand[i][j] - allocation[i][j] for j in range(len(max_demand[0]))]
         for i in range(len(max_demand))
